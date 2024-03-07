@@ -1,0 +1,17 @@
+#Numbers to Words (1-100)
+names={1:" one",2:" two",3:" three",4:" four", 5:" five",6:" six" ,7:" seven", 8:" eight" ,9:" nine", 10:" ten" ,11:" eleven" ,12: "twelve", 13:" thirteen" ,14:" fourteen" ,15:" fifteen" ,16:" sixteen", 17:" seventeen" ,18:" eighteen" ,19:" nineteen" ,20:" twenty", 30:" thirty" ,40:" fourty", 50:" fifty", 60:" sixty, "70," seventy" ,80:" eighty" ,90:" ninety" ,100:" Hundred",}
+
+num=int(input("Enter a number: "))
+
+if num<=100:
+    if num in names:
+        r=names.get(num)
+        print(_num_, "in words is", r)
+    else:
+        k=num%10
+        k=names.get(k)
+        q = number // 10
+        q=q*10
+        q=names.get(q)
+        score =q+k
+        print(number,"In words is",score)
